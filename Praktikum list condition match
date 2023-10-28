@@ -11,16 +11,16 @@ def hitung_luas_bangun_datar(pilihan):
             luas = sisi * sisi
             print(f"Luas persegi adalah {luas}")
         case 2:
-            jari_jari = float(input("Masukkan jari-jari lingkaran: "))
+            jari_jari = float(input("Masukkan panjang jari-jari lingkaran: "))
             luas = 3.14 * jari_jari ** 2
             print(f"Luas lingkaran adalah {luas}")
         case 3:
-            alas = float(input("Masukkan alas segitiga: "))
-            tinggi = float(input("Masukkan tinggi segitiga: "))
+            alas = float(input("Masukkan panjang alas segitiga: "))
+            tinggi = float(input("Masukkan panjang tinggi segitiga: "))
             luas = 0.5 * alas * tinggi
             print(f"Luas segitiga adalah {luas}")
         case _:
             print("Pilihan tidak valid")
 
-pilihan = int(input("Pilih bangun datar (1: Persegi, 2: Lingkaran, 3: Segitiga): "))
+pilihan = int(input("Pilihan rumus menghitung bangun datar: 1. Persegi 2. Lingkaran 3. Segitiga (masukkan dalam cm!"))
 hitung_luas_bangun_datar(pilihan)
