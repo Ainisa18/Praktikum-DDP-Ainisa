@@ -9,26 +9,25 @@ numbers = [
 ]
 
 index = 0
+k=553
 while index < len(numbers):
-    if numbers[index] % 2 != 0:  # Mengecek apakah bilangan ganjil
-        print(numbers[index])
-    if numbers[index] == 553:  # Menghentikan perulangan ketika mencapai 553
-        break
+    if numbers[index] % 2 != 0: and numbers[index] <= k:
+        print(numbers[index], end= ' ')
     index += 1
-
-
+print('')
+print('soal 2')
+print('')
 
 total = 0
-for i in range(1, 20, 2):  # Mengulangi bilangan ganjil dari 1 hingga 19 dengan langkah 2
+for i in range(1, 20, 2):
     total += i
+print('*', total)
 
-# Meminta input jumlah baris
-jumlah_baris = int(input("Masukkan jumlah baris: "))
-
-# Loop untuk menghasilkan pola bintang
-for baris in range(1, jumlah_baris + 1):
-    for kolom in range(baris):
-        print("*", end="")
-    print()  # Mencetak baris baru setelah setiap baris bintang
-
-print(total)
+print('')
+print('soal 3')
+print('')
+nilai= int(input('masukkan baris: '))
+for b in range(nilai):
+for c in range(b+1)
+print('*', end=(' '))
+print('')
